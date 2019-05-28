@@ -1,0 +1,3884 @@
+@import "variables";
+
+@font-face {
+  font-family: '#{$artrogenos-font-family}';
+  src:  url('#{$artrogenos-font-path}/#{$artrogenos-font-family}.eot?21g5ss');
+  src:  url('#{$artrogenos-font-path}/#{$artrogenos-font-family}.eot?21g5ss#iefix') format('embedded-opentype'),
+    url('#{$artrogenos-font-path}/#{$artrogenos-font-family}.ttf?21g5ss') format('truetype'),
+    url('#{$artrogenos-font-path}/#{$artrogenos-font-family}.woff?21g5ss') format('woff'),
+    url('#{$artrogenos-font-path}/#{$artrogenos-font-family}.svg?21g5ss##{$artrogenos-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="ar-"], [class*=" ar-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$artrogenos-font-family}' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ar-icons {
+  display: inline-block;
+  font: normal normal normal 1em/1 '#{$artrogenos-font-family}';
+  vertical-align: middle;
+  speak: none;
+  text-transform: none;
+  /* Better Font Rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1rem;
+  line-height: 1.5;
+  padding-left: .2rem;
+  padding-right: .2rem;
+}
+
+.ar-ai {
+  &:before {
+    content: $ar-ai;
+  }
+}
+.ar-database-11 {
+  &:before {
+    content: $ar-database-11;
+  }
+}
+.ar-database1 {
+  &:before {
+    content: $ar-database1;
+  }
+}
+.ar-github-mono-1 {
+  &:before {
+    content: $ar-github-mono-1;
+  }
+}
+.ar-github-mono-2 {
+  &:before {
+    content: $ar-github-mono-2;
+  }
+}
+.ar-phone1 {
+  &:before {
+    content: $ar-phone1;
+  }
+}
+.ar-python-mono {
+  &:before {
+    content: $ar-python-mono;
+  }
+}
+.ar-tablet1 {
+  &:before {
+    content: $ar-tablet1;
+  }
+}
+.ar-touch-screen {
+  &:before {
+    content: $ar-touch-screen;
+  }
+}
+.ar-back1 {
+  &:before {
+    content: $ar-back1;
+  }
+}
+.ar-bar-chart1 {
+  &:before {
+    content: $ar-bar-chart1;
+  }
+}
+.ar-settings1 {
+  &:before {
+    content: $ar-settings1;
+  }
+}
+.ar-line-chart {
+  &:before {
+    content: $ar-line-chart;
+  }
+}
+.ar-analysis {
+  &:before {
+    content: $ar-analysis;
+  }
+}
+.ar-development {
+  &:before {
+    content: $ar-development;
+  }
+}
+.ar-idea1 {
+  &:before {
+    content: $ar-idea1;
+  }
+}
+.ar-right-arrow1 {
+  &:before {
+    content: $ar-right-arrow1;
+  }
+}
+.ar-down-arrow1 {
+  &:before {
+    content: $ar-down-arrow1;
+  }
+}
+.ar-cancel-1 {
+  &:before {
+    content: $ar-cancel-1;
+  }
+}
+.ar-add-1 {
+  &:before {
+    content: $ar-add-1;
+  }
+}
+.ar-add-2 {
+  &:before {
+    content: $ar-add-2;
+  }
+}
+.ar-add-3 {
+  &:before {
+    content: $ar-add-3;
+  }
+}
+.ar-add {
+  &:before {
+    content: $ar-add;
+  }
+}
+.ar-agenda {
+  &:before {
+    content: $ar-agenda;
+  }
+}
+.ar-alarm-1 {
+  &:before {
+    content: $ar-alarm-1;
+  }
+}
+.ar-alarm-clock-1 {
+  &:before {
+    content: $ar-alarm-clock-1;
+  }
+}
+.ar-alarm-clock {
+  &:before {
+    content: $ar-alarm-clock;
+  }
+}
+.ar-alarm {
+  &:before {
+    content: $ar-alarm;
+  }
+}
+.ar-albums {
+  &:before {
+    content: $ar-albums;
+  }
+}
+.ar-app {
+  &:before {
+    content: $ar-app;
+  }
+}
+.ar-archive-1 {
+  &:before {
+    content: $ar-archive-1;
+  }
+}
+.ar-archive-2 {
+  &:before {
+    content: $ar-archive-2;
+  }
+}
+.ar-archive-3 {
+  &:before {
+    content: $ar-archive-3;
+  }
+}
+.ar-archive {
+  &:before {
+    content: $ar-archive;
+  }
+}
+.ar-attachment {
+  &:before {
+    content: $ar-attachment;
+  }
+}
+.ar-back {
+  &:before {
+    content: $ar-back;
+  }
+}
+.ar-battery-1 {
+  &:before {
+    content: $ar-battery-1;
+  }
+}
+.ar-battery-2 {
+  &:before {
+    content: $ar-battery-2;
+  }
+}
+.ar-battery-3 {
+  &:before {
+    content: $ar-battery-3;
+  }
+}
+.ar-battery-4 {
+  &:before {
+    content: $ar-battery-4;
+  }
+}
+.ar-battery-5 {
+  &:before {
+    content: $ar-battery-5;
+  }
+}
+.ar-battery-6 {
+  &:before {
+    content: $ar-battery-6;
+  }
+}
+.ar-battery-7 {
+  &:before {
+    content: $ar-battery-7;
+  }
+}
+.ar-battery-8 {
+  &:before {
+    content: $ar-battery-8;
+  }
+}
+.ar-battery-9 {
+  &:before {
+    content: $ar-battery-9;
+  }
+}
+.ar-battery {
+  &:before {
+    content: $ar-battery;
+  }
+}
+.ar-binoculars {
+  &:before {
+    content: $ar-binoculars;
+  }
+}
+.ar-blueprint {
+  &:before {
+    content: $ar-blueprint;
+  }
+}
+.ar-bluetooth-1 {
+  &:before {
+    content: $ar-bluetooth-1;
+  }
+}
+.ar-bluetooth {
+  &:before {
+    content: $ar-bluetooth;
+  }
+}
+.ar-bookmark-1 {
+  &:before {
+    content: $ar-bookmark-1;
+  }
+}
+.ar-bookmark {
+  &:before {
+    content: $ar-bookmark;
+  }
+}
+.ar-briefcase {
+  &:before {
+    content: $ar-briefcase;
+  }
+}
+.ar-broken-link {
+  &:before {
+    content: $ar-broken-link;
+  }
+}
+.ar-calculator-1 {
+  &:before {
+    content: $ar-calculator-1;
+  }
+}
+.ar-calculator {
+  &:before {
+    content: $ar-calculator;
+  }
+}
+.ar-calendar-1 {
+  &:before {
+    content: $ar-calendar-1;
+  }
+}
+.ar-calendar-2 {
+  &:before {
+    content: $ar-calendar-2;
+  }
+}
+.ar-calendar-3 {
+  &:before {
+    content: $ar-calendar-3;
+  }
+}
+.ar-calendar-4 {
+  &:before {
+    content: $ar-calendar-4;
+  }
+}
+.ar-calendar-5 {
+  &:before {
+    content: $ar-calendar-5;
+  }
+}
+.ar-calendar-6 {
+  &:before {
+    content: $ar-calendar-6;
+  }
+}
+.ar-calendar-7 {
+  &:before {
+    content: $ar-calendar-7;
+  }
+}
+.ar-calendar {
+  &:before {
+    content: $ar-calendar;
+  }
+}
+.ar-checked-1 {
+  &:before {
+    content: $ar-checked-1;
+  }
+}
+.ar-checked {
+  &:before {
+    content: $ar-checked;
+  }
+}
+.ar-clock-1 {
+  &:before {
+    content: $ar-clock-1;
+  }
+}
+.ar-clock {
+  &:before {
+    content: $ar-clock;
+  }
+}
+.ar-close {
+  &:before {
+    content: $ar-close;
+  }
+}
+.ar-cloud-computing-1 {
+  &:before {
+    content: $ar-cloud-computing-1;
+  }
+}
+.ar-cloud-computing-2 {
+  &:before {
+    content: $ar-cloud-computing-2;
+  }
+}
+.ar-cloud-computing-3 {
+  &:before {
+    content: $ar-cloud-computing-3;
+  }
+}
+.ar-cloud-computing-4 {
+  &:before {
+    content: $ar-cloud-computing-4;
+  }
+}
+.ar-cloud-computing-5 {
+  &:before {
+    content: $ar-cloud-computing-5;
+  }
+}
+.ar-cloud-computing {
+  &:before {
+    content: $ar-cloud-computing;
+  }
+}
+.ar-cloud {
+  &:before {
+    content: $ar-cloud;
+  }
+}
+.ar-command {
+  &:before {
+    content: $ar-command;
+  }
+}
+.ar-compact-disc-1 {
+  &:before {
+    content: $ar-compact-disc-1;
+  }
+}
+.ar-compact-disc-2 {
+  &:before {
+    content: $ar-compact-disc-2;
+  }
+}
+.ar-compact-disc {
+  &:before {
+    content: $ar-compact-disc;
+  }
+}
+.ar-compass {
+  &:before {
+    content: $ar-compass;
+  }
+}
+.ar-compose {
+  &:before {
+    content: $ar-compose;
+  }
+}
+.ar-controls-1 {
+  &:before {
+    content: $ar-controls-1;
+  }
+}
+.ar-controls-2 {
+  &:before {
+    content: $ar-controls-2;
+  }
+}
+.ar-controls-3 {
+  &:before {
+    content: $ar-controls-3;
+  }
+}
+.ar-controls-4 {
+  &:before {
+    content: $ar-controls-4;
+  }
+}
+.ar-controls-5 {
+  &:before {
+    content: $ar-controls-5;
+  }
+}
+.ar-controls-6 {
+  &:before {
+    content: $ar-controls-6;
+  }
+}
+.ar-controls-7 {
+  &:before {
+    content: $ar-controls-7;
+  }
+}
+.ar-controls-8 {
+  &:before {
+    content: $ar-controls-8;
+  }
+}
+.ar-controls-9 {
+  &:before {
+    content: $ar-controls-9;
+  }
+}
+.ar-controls {
+  &:before {
+    content: $ar-controls;
+  }
+}
+.ar-database-1 {
+  &:before {
+    content: $ar-database-1;
+  }
+}
+.ar-database-2 {
+  &:before {
+    content: $ar-database-2;
+  }
+}
+.ar-database-3 {
+  &:before {
+    content: $ar-database-3;
+  }
+}
+.ar-database {
+  &:before {
+    content: $ar-database;
+  }
+}
+.ar-diamond {
+  &:before {
+    content: $ar-diamond;
+  }
+}
+.ar-diploma {
+  &:before {
+    content: $ar-diploma;
+  }
+}
+.ar-dislike-1 {
+  &:before {
+    content: $ar-dislike-1;
+  }
+}
+.ar-dislike {
+  &:before {
+    content: $ar-dislike;
+  }
+}
+.ar-divide-1 {
+  &:before {
+    content: $ar-divide-1;
+  }
+}
+.ar-divide {
+  &:before {
+    content: $ar-divide;
+  }
+}
+.ar-division {
+  &:before {
+    content: $ar-division;
+  }
+}
+.ar-document {
+  &:before {
+    content: $ar-document;
+  }
+}
+.ar-download {
+  &:before {
+    content: $ar-download;
+  }
+}
+.ar-edit-1 {
+  &:before {
+    content: $ar-edit-1;
+  }
+}
+.ar-edit {
+  &:before {
+    content: $ar-edit;
+  }
+}
+.ar-eject-1 {
+  &:before {
+    content: $ar-eject-1;
+  }
+}
+.ar-eject {
+  &:before {
+    content: $ar-eject;
+  }
+}
+.ar-equal-1 {
+  &:before {
+    content: $ar-equal-1;
+  }
+}
+.ar-equal-2 {
+  &:before {
+    content: $ar-equal-2;
+  }
+}
+.ar-equal {
+  &:before {
+    content: $ar-equal;
+  }
+}
+.ar-error {
+  &:before {
+    content: $ar-error;
+  }
+}
+.ar-exit-1 {
+  &:before {
+    content: $ar-exit-1;
+  }
+}
+.ar-exit-2 {
+  &:before {
+    content: $ar-exit-2;
+  }
+}
+.ar-exit {
+  &:before {
+    content: $ar-exit;
+  }
+}
+.ar-eyeglasses {
+  &:before {
+    content: $ar-eyeglasses;
+  }
+}
+.ar-fax {
+  &:before {
+    content: $ar-fax;
+  }
+}
+.ar-file-1 {
+  &:before {
+    content: $ar-file-1;
+  }
+}
+.ar-file-2 {
+  &:before {
+    content: $ar-file-2;
+  }
+}
+.ar-file {
+  &:before {
+    content: $ar-file;
+  }
+}
+.ar-film {
+  &:before {
+    content: $ar-film;
+  }
+}
+.ar-fingerprint {
+  &:before {
+    content: $ar-fingerprint;
+  }
+}
+.ar-flag-1 {
+  &:before {
+    content: $ar-flag-1;
+  }
+}
+.ar-flag-2 {
+  &:before {
+    content: $ar-flag-2;
+  }
+}
+.ar-flag-3 {
+  &:before {
+    content: $ar-flag-3;
+  }
+}
+.ar-flag-4 {
+  &:before {
+    content: $ar-flag-4;
+  }
+}
+.ar-flag {
+  &:before {
+    content: $ar-flag;
+  }
+}
+.ar-focus {
+  &:before {
+    content: $ar-focus;
+  }
+}
+.ar-folder-1 {
+  &:before {
+    content: $ar-folder-1;
+  }
+}
+.ar-folder-2 {
+  &:before {
+    content: $ar-folder-2;
+  }
+}
+.ar-folder-3 {
+  &:before {
+    content: $ar-folder-3;
+  }
+}
+.ar-folder-4 {
+  &:before {
+    content: $ar-folder-4;
+  }
+}
+.ar-folder-5 {
+  &:before {
+    content: $ar-folder-5;
+  }
+}
+.ar-folder-6 {
+  &:before {
+    content: $ar-folder-6;
+  }
+}
+.ar-folder-7 {
+  &:before {
+    content: $ar-folder-7;
+  }
+}
+.ar-folder-8 {
+  &:before {
+    content: $ar-folder-8;
+  }
+}
+.ar-folder-9 {
+  &:before {
+    content: $ar-folder-9;
+  }
+}
+.ar-folder-10 {
+  &:before {
+    content: $ar-folder-10;
+  }
+}
+.ar-folder-11 {
+  &:before {
+    content: $ar-folder-11;
+  }
+}
+.ar-folder-12 {
+  &:before {
+    content: $ar-folder-12;
+  }
+}
+.ar-folder-13 {
+  &:before {
+    content: $ar-folder-13;
+  }
+}
+.ar-folder-14 {
+  &:before {
+    content: $ar-folder-14;
+  }
+}
+.ar-folder-15 {
+  &:before {
+    content: $ar-folder-15;
+  }
+}
+.ar-folder-16 {
+  &:before {
+    content: $ar-folder-16;
+  }
+}
+.ar-folder-17 {
+  &:before {
+    content: $ar-folder-17;
+  }
+}
+.ar-folder-18 {
+  &:before {
+    content: $ar-folder-18;
+  }
+}
+.ar-folder-19 {
+  &:before {
+    content: $ar-folder-19;
+  }
+}
+.ar-folder {
+  &:before {
+    content: $ar-folder;
+  }
+}
+.ar-forbidden {
+  &:before {
+    content: $ar-forbidden;
+  }
+}
+.ar-funnel {
+  &:before {
+    content: $ar-funnel;
+  }
+}
+.ar-garbage-1 {
+  &:before {
+    content: $ar-garbage-1;
+  }
+}
+.ar-garbage-2 {
+  &:before {
+    content: $ar-garbage-2;
+  }
+}
+.ar-garbage {
+  &:before {
+    content: $ar-garbage;
+  }
+}
+.ar-gift {
+  &:before {
+    content: $ar-gift;
+  }
+}
+.ar-help {
+  &:before {
+    content: $ar-help;
+  }
+}
+.ar-hide {
+  &:before {
+    content: $ar-hide;
+  }
+}
+.ar-hold {
+  &:before {
+    content: $ar-hold;
+  }
+}
+.ar-home-1 {
+  &:before {
+    content: $ar-home-1;
+  }
+}
+.ar-home-2 {
+  &:before {
+    content: $ar-home-2;
+  }
+}
+.ar-home {
+  &:before {
+    content: $ar-home;
+  }
+}
+.ar-house {
+  &:before {
+    content: $ar-house;
+  }
+}
+.ar-id-card-1 {
+  &:before {
+    content: $ar-id-card-1;
+  }
+}
+.ar-id-card-2 {
+  &:before {
+    content: $ar-id-card-2;
+  }
+}
+.ar-id-card-3 {
+  &:before {
+    content: $ar-id-card-3;
+  }
+}
+.ar-id-card-4 {
+  &:before {
+    content: $ar-id-card-4;
+  }
+}
+.ar-id-card-5 {
+  &:before {
+    content: $ar-id-card-5;
+  }
+}
+.ar-id-card {
+  &:before {
+    content: $ar-id-card;
+  }
+}
+.ar-idea {
+  &:before {
+    content: $ar-idea;
+  }
+}
+.ar-incoming {
+  &:before {
+    content: $ar-incoming;
+  }
+}
+.ar-infinity {
+  &:before {
+    content: $ar-infinity;
+  }
+}
+.ar-info {
+  &:before {
+    content: $ar-info;
+  }
+}
+.ar-internet {
+  &:before {
+    content: $ar-internet;
+  }
+}
+.ar-key {
+  &:before {
+    content: $ar-key;
+  }
+}
+.ar-layers-1 {
+  &:before {
+    content: $ar-layers-1;
+  }
+}
+.ar-layers {
+  &:before {
+    content: $ar-layers;
+  }
+}
+.ar-list-1 {
+  &:before {
+    content: $ar-list-1;
+  }
+}
+.ar-list {
+  &:before {
+    content: $ar-list;
+  }
+}
+.ar-login {
+  &:before {
+    content: $ar-login;
+  }
+}
+.ar-magic-wand {
+  &:before {
+    content: $ar-magic-wand;
+  }
+}
+.ar-map-1 {
+  &:before {
+    content: $ar-map-1;
+  }
+}
+.ar-map-2 {
+  &:before {
+    content: $ar-map-2;
+  }
+}
+.ar-map-location {
+  &:before {
+    content: $ar-map-location;
+  }
+}
+.ar-map {
+  &:before {
+    content: $ar-map;
+  }
+}
+.ar-megaphone-1 {
+  &:before {
+    content: $ar-megaphone-1;
+  }
+}
+.ar-megaphone {
+  &:before {
+    content: $ar-megaphone;
+  }
+}
+.ar-menu-1 {
+  &:before {
+    content: $ar-menu-1;
+  }
+}
+.ar-menu-2 {
+  &:before {
+    content: $ar-menu-2;
+  }
+}
+.ar-menu-3 {
+  &:before {
+    content: $ar-menu-3;
+  }
+}
+.ar-menu-4 {
+  &:before {
+    content: $ar-menu-4;
+  }
+}
+.ar-menu {
+  &:before {
+    content: $ar-menu;
+  }
+}
+.ar-minus-1 {
+  &:before {
+    content: $ar-minus-1;
+  }
+}
+.ar-minus {
+  &:before {
+    content: $ar-minus;
+  }
+}
+.ar-more-1 {
+  &:before {
+    content: $ar-more-1;
+  }
+}
+.ar-more-2 {
+  &:before {
+    content: $ar-more-2;
+  }
+}
+.ar-more {
+  &:before {
+    content: $ar-more;
+  }
+}
+.ar-multiply-1 {
+  &:before {
+    content: $ar-multiply-1;
+  }
+}
+.ar-multiply {
+  &:before {
+    content: $ar-multiply;
+  }
+}
+.ar-navigation-1 {
+  &:before {
+    content: $ar-navigation-1;
+  }
+}
+.ar-navigation {
+  &:before {
+    content: $ar-navigation;
+  }
+}
+.ar-network {
+  &:before {
+    content: $ar-network;
+  }
+}
+.ar-newspaper {
+  &:before {
+    content: $ar-newspaper;
+  }
+}
+.ar-next {
+  &:before {
+    content: $ar-next;
+  }
+}
+.ar-note {
+  &:before {
+    content: $ar-note;
+  }
+}
+.ar-notebook-1 {
+  &:before {
+    content: $ar-notebook-1;
+  }
+}
+.ar-notebook-2 {
+  &:before {
+    content: $ar-notebook-2;
+  }
+}
+.ar-notebook-3 {
+  &:before {
+    content: $ar-notebook-3;
+  }
+}
+.ar-notebook-4 {
+  &:before {
+    content: $ar-notebook-4;
+  }
+}
+.ar-notebook-5 {
+  &:before {
+    content: $ar-notebook-5;
+  }
+}
+.ar-notebook {
+  &:before {
+    content: $ar-notebook;
+  }
+}
+.ar-notepad-1 {
+  &:before {
+    content: $ar-notepad-1;
+  }
+}
+.ar-notepad-2 {
+  &:before {
+    content: $ar-notepad-2;
+  }
+}
+.ar-notepad {
+  &:before {
+    content: $ar-notepad;
+  }
+}
+.ar-notification {
+  &:before {
+    content: $ar-notification;
+  }
+}
+.ar-paper-plane-1 {
+  &:before {
+    content: $ar-paper-plane-1;
+  }
+}
+.ar-paper-plane {
+  &:before {
+    content: $ar-paper-plane;
+  }
+}
+.ar-pause-1 {
+  &:before {
+    content: $ar-pause-1;
+  }
+}
+.ar-pause {
+  &:before {
+    content: $ar-pause;
+  }
+}
+.ar-percent-1 {
+  &:before {
+    content: $ar-percent-1;
+  }
+}
+.ar-percent {
+  &:before {
+    content: $ar-percent;
+  }
+}
+.ar-perspective {
+  &:before {
+    content: $ar-perspective;
+  }
+}
+.ar-photo-camera-1 {
+  &:before {
+    content: $ar-photo-camera-1;
+  }
+}
+.ar-photo-camera {
+  &:before {
+    content: $ar-photo-camera;
+  }
+}
+.ar-photos {
+  &:before {
+    content: $ar-photos;
+  }
+}
+.ar-picture-1 {
+  &:before {
+    content: $ar-picture-1;
+  }
+}
+.ar-picture-2 {
+  &:before {
+    content: $ar-picture-2;
+  }
+}
+.ar-picture {
+  &:before {
+    content: $ar-picture;
+  }
+}
+.ar-pin {
+  &:before {
+    content: $ar-pin;
+  }
+}
+.ar-placeholder-1 {
+  &:before {
+    content: $ar-placeholder-1;
+  }
+}
+.ar-placeholder-2 {
+  &:before {
+    content: $ar-placeholder-2;
+  }
+}
+.ar-placeholder-3 {
+  &:before {
+    content: $ar-placeholder-3;
+  }
+}
+.ar-placeholder {
+  &:before {
+    content: $ar-placeholder;
+  }
+}
+.ar-placeholders {
+  &:before {
+    content: $ar-placeholders;
+  }
+}
+.ar-plus {
+  &:before {
+    content: $ar-plus;
+  }
+}
+.ar-power {
+  &:before {
+    content: $ar-power;
+  }
+}
+.ar-previous {
+  &:before {
+    content: $ar-previous;
+  }
+}
+.ar-price-tag {
+  &:before {
+    content: $ar-price-tag;
+  }
+}
+.ar-print {
+  &:before {
+    content: $ar-print;
+  }
+}
+.ar-push-pin {
+  &:before {
+    content: $ar-push-pin;
+  }
+}
+.ar-radar {
+  &:before {
+    content: $ar-radar;
+  }
+}
+.ar-reading {
+  &:before {
+    content: $ar-reading;
+  }
+}
+.ar-record {
+  &:before {
+    content: $ar-record;
+  }
+}
+.ar-repeat-1 {
+  &:before {
+    content: $ar-repeat-1;
+  }
+}
+.ar-repeat {
+  &:before {
+    content: $ar-repeat;
+  }
+}
+.ar-restart {
+  &:before {
+    content: $ar-restart;
+  }
+}
+.ar-resume {
+  &:before {
+    content: $ar-resume;
+  }
+}
+.ar-route {
+  &:before {
+    content: $ar-route;
+  }
+}
+.ar-save {
+  &:before {
+    content: $ar-save;
+  }
+}
+.ar-search-1 {
+  &:before {
+    content: $ar-search-1;
+  }
+}
+.ar-search {
+  &:before {
+    content: $ar-search;
+  }
+}
+.ar-send {
+  &:before {
+    content: $ar-send;
+  }
+}
+.ar-server-1 {
+  &:before {
+    content: $ar-server-1;
+  }
+}
+.ar-server-2 {
+  &:before {
+    content: $ar-server-2;
+  }
+}
+.ar-server-3 {
+  &:before {
+    content: $ar-server-3;
+  }
+}
+.ar-server {
+  &:before {
+    content: $ar-server;
+  }
+}
+.ar-settings-1 {
+  &:before {
+    content: $ar-settings-1;
+  }
+}
+.ar-settings-2 {
+  &:before {
+    content: $ar-settings-2;
+  }
+}
+.ar-settings-3 {
+  &:before {
+    content: $ar-settings-3;
+  }
+}
+.ar-settings-4 {
+  &:before {
+    content: $ar-settings-4;
+  }
+}
+.ar-settings-5 {
+  &:before {
+    content: $ar-settings-5;
+  }
+}
+.ar-settings-6 {
+  &:before {
+    content: $ar-settings-6;
+  }
+}
+.ar-settings-7 {
+  &:before {
+    content: $ar-settings-7;
+  }
+}
+.ar-settings-8 {
+  &:before {
+    content: $ar-settings-8;
+  }
+}
+.ar-settings-9 {
+  &:before {
+    content: $ar-settings-9;
+  }
+}
+.ar-settings {
+  &:before {
+    content: $ar-settings;
+  }
+}
+.ar-share-1 {
+  &:before {
+    content: $ar-share-1;
+  }
+}
+.ar-share-2 {
+  &:before {
+    content: $ar-share-2;
+  }
+}
+.ar-share {
+  &:before {
+    content: $ar-share;
+  }
+}
+.ar-shuffle-1 {
+  &:before {
+    content: $ar-shuffle-1;
+  }
+}
+.ar-shuffle {
+  &:before {
+    content: $ar-shuffle;
+  }
+}
+.ar-shutdown {
+  &:before {
+    content: $ar-shutdown;
+  }
+}
+.ar-sign-1 {
+  &:before {
+    content: $ar-sign-1;
+  }
+}
+.ar-sign {
+  &:before {
+    content: $ar-sign;
+  }
+}
+.ar-skip {
+  &:before {
+    content: $ar-skip;
+  }
+}
+.ar-smartphone-1 {
+  &:before {
+    content: $ar-smartphone-1;
+  }
+}
+.ar-smartphone-2 {
+  &:before {
+    content: $ar-smartphone-2;
+  }
+}
+.ar-smartphone-3 {
+  &:before {
+    content: $ar-smartphone-3;
+  }
+}
+.ar-smartphone-4 {
+  &:before {
+    content: $ar-smartphone-4;
+  }
+}
+.ar-smartphone-5 {
+  &:before {
+    content: $ar-smartphone-5;
+  }
+}
+.ar-smartphone-6 {
+  &:before {
+    content: $ar-smartphone-6;
+  }
+}
+.ar-smartphone-7 {
+  &:before {
+    content: $ar-smartphone-7;
+  }
+}
+.ar-smartphone-8 {
+  &:before {
+    content: $ar-smartphone-8;
+  }
+}
+.ar-smartphone-9 {
+  &:before {
+    content: $ar-smartphone-9;
+  }
+}
+.ar-smartphone-10 {
+  &:before {
+    content: $ar-smartphone-10;
+  }
+}
+.ar-smartphone-11 {
+  &:before {
+    content: $ar-smartphone-11;
+  }
+}
+.ar-smartphone {
+  &:before {
+    content: $ar-smartphone;
+  }
+}
+.ar-speaker-1 {
+  &:before {
+    content: $ar-speaker-1;
+  }
+}
+.ar-speaker-2 {
+  &:before {
+    content: $ar-speaker-2;
+  }
+}
+.ar-star-1 {
+  &:before {
+    content: $ar-star-1;
+  }
+}
+.ar-star {
+  &:before {
+    content: $ar-star;
+  }
+}
+.ar-stop-1 {
+  &:before {
+    content: $ar-stop-1;
+  }
+}
+.ar-stop {
+  &:before {
+    content: $ar-stop;
+  }
+}
+.ar-stopwatch-1 {
+  &:before {
+    content: $ar-stopwatch-1;
+  }
+}
+.ar-stopwatch-2 {
+  &:before {
+    content: $ar-stopwatch-2;
+  }
+}
+.ar-stopwatch-3 {
+  &:before {
+    content: $ar-stopwatch-3;
+  }
+}
+.ar-stopwatch-4 {
+  &:before {
+    content: $ar-stopwatch-4;
+  }
+}
+.ar-stopwatch {
+  &:before {
+    content: $ar-stopwatch;
+  }
+}
+.ar-street-1 {
+  &:before {
+    content: $ar-street-1;
+  }
+}
+.ar-street {
+  &:before {
+    content: $ar-street;
+  }
+}
+.ar-substract-1 {
+  &:before {
+    content: $ar-substract-1;
+  }
+}
+.ar-substract {
+  &:before {
+    content: $ar-substract;
+  }
+}
+.ar-success {
+  &:before {
+    content: $ar-success;
+  }
+}
+.ar-switch-1 {
+  &:before {
+    content: $ar-switch-1;
+  }
+}
+.ar-switch-2 {
+  &:before {
+    content: $ar-switch-2;
+  }
+}
+.ar-switch-3 {
+  &:before {
+    content: $ar-switch-3;
+  }
+}
+.ar-tabs-1 {
+  &:before {
+    content: $ar-tabs-1;
+  }
+}
+.ar-tabs {
+  &:before {
+    content: $ar-tabs;
+  }
+}
+.ar-target {
+  &:before {
+    content: $ar-target;
+  }
+}
+.ar-television-1 {
+  &:before {
+    content: $ar-television-1;
+  }
+}
+.ar-television {
+  &:before {
+    content: $ar-television;
+  }
+}
+.ar-time {
+  &:before {
+    content: $ar-time;
+  }
+}
+.ar-trash {
+  &:before {
+    content: $ar-trash;
+  }
+}
+.ar-umbrella {
+  &:before {
+    content: $ar-umbrella;
+  }
+}
+.ar-unlink {
+  &:before {
+    content: $ar-unlink;
+  }
+}
+.ar-upload {
+  &:before {
+    content: $ar-upload;
+  }
+}
+.ar-user-1 {
+  &:before {
+    content: $ar-user-1;
+  }
+}
+.ar-user-2 {
+  &:before {
+    content: $ar-user-2;
+  }
+}
+.ar-user-3 {
+  &:before {
+    content: $ar-user-3;
+  }
+}
+.ar-user-4 {
+  &:before {
+    content: $ar-user-4;
+  }
+}
+.ar-user-5 {
+  &:before {
+    content: $ar-user-5;
+  }
+}
+.ar-user-6 {
+  &:before {
+    content: $ar-user-6;
+  }
+}
+.ar-user-7 {
+  &:before {
+    content: $ar-user-7;
+  }
+}
+.ar-user {
+  &:before {
+    content: $ar-user;
+  }
+}
+.ar-users-1 {
+  &:before {
+    content: $ar-users-1;
+  }
+}
+.ar-users {
+  &:before {
+    content: $ar-users;
+  }
+}
+.ar-warning {
+  &:before {
+    content: $ar-warning;
+  }
+}
+.ar-wifi-1 {
+  &:before {
+    content: $ar-wifi-1;
+  }
+}
+.ar-wifi {
+  &:before {
+    content: $ar-wifi;
+  }
+}
+.ar-windows-1 {
+  &:before {
+    content: $ar-windows-1;
+  }
+}
+.ar-windows-2 {
+  &:before {
+    content: $ar-windows-2;
+  }
+}
+.ar-windows-3 {
+  &:before {
+    content: $ar-windows-3;
+  }
+}
+.ar-windows-4 {
+  &:before {
+    content: $ar-windows-4;
+  }
+}
+.ar-windows {
+  &:before {
+    content: $ar-windows;
+  }
+}
+.ar-wireless-internet {
+  &:before {
+    content: $ar-wireless-internet;
+  }
+}
+.ar-worldwide-1 {
+  &:before {
+    content: $ar-worldwide-1;
+  }
+}
+.ar-worldwide {
+  &:before {
+    content: $ar-worldwide;
+  }
+}
+.ar-zoom-in {
+  &:before {
+    content: $ar-zoom-in;
+  }
+}
+.ar-zoom-out {
+  &:before {
+    content: $ar-zoom-out;
+  }
+}
+.ar-add1 {
+  &:before {
+    content: $ar-add1;
+  }
+}
+.ar-bar-chart {
+  &:before {
+    content: $ar-bar-chart;
+  }
+}
+.ar-cancel {
+  &:before {
+    content: $ar-cancel;
+  }
+}
+.ar-check-mark {
+  &:before {
+    content: $ar-check-mark;
+  }
+}
+.ar-check {
+  &:before {
+    content: $ar-check;
+  }
+}
+.ar-checked1 {
+  &:before {
+    content: $ar-checked1;
+  }
+}
+.ar-close1 {
+  &:before {
+    content: $ar-close1;
+  }
+}
+.ar-communication-1 {
+  &:before {
+    content: $ar-communication-1;
+  }
+}
+.ar-communication-2 {
+  &:before {
+    content: $ar-communication-2;
+  }
+}
+.ar-communication-3 {
+  &:before {
+    content: $ar-communication-3;
+  }
+}
+.ar-communication-4 {
+  &:before {
+    content: $ar-communication-4;
+  }
+}
+.ar-communication-5 {
+  &:before {
+    content: $ar-communication-5;
+  }
+}
+.ar-communication-6 {
+  &:before {
+    content: $ar-communication-6;
+  }
+}
+.ar-communication {
+  &:before {
+    content: $ar-communication;
+  }
+}
+.ar-cursor-1 {
+  &:before {
+    content: $ar-cursor-1;
+  }
+}
+.ar-cursor-2 {
+  &:before {
+    content: $ar-cursor-2;
+  }
+}
+.ar-cursor {
+  &:before {
+    content: $ar-cursor;
+  }
+}
+.ar-delete {
+  &:before {
+    content: $ar-delete;
+  }
+}
+.ar-dislike-11 {
+  &:before {
+    content: $ar-dislike-11;
+  }
+}
+.ar-dislike1 {
+  &:before {
+    content: $ar-dislike1;
+  }
+}
+.ar-down-arrow {
+  &:before {
+    content: $ar-down-arrow;
+  }
+}
+.ar-download-1 {
+  &:before {
+    content: $ar-download-1;
+  }
+}
+.ar-download-2 {
+  &:before {
+    content: $ar-download-2;
+  }
+}
+.ar-download1 {
+  &:before {
+    content: $ar-download1;
+  }
+}
+.ar-edit1 {
+  &:before {
+    content: $ar-edit1;
+  }
+}
+.ar-expand-1 {
+  &:before {
+    content: $ar-expand-1;
+  }
+}
+.ar-expand {
+  &:before {
+    content: $ar-expand;
+  }
+}
+.ar-export {
+  &:before {
+    content: $ar-export;
+  }
+}
+.ar-forbidden1 {
+  &:before {
+    content: $ar-forbidden1;
+  }
+}
+.ar-import-1 {
+  &:before {
+    content: $ar-import-1;
+  }
+}
+.ar-import-2 {
+  &:before {
+    content: $ar-import-2;
+  }
+}
+.ar-import {
+  &:before {
+    content: $ar-import;
+  }
+}
+.ar-left-arrow-1 {
+  &:before {
+    content: $ar-left-arrow-1;
+  }
+}
+.ar-left-arrow {
+  &:before {
+    content: $ar-left-arrow;
+  }
+}
+.ar-letter {
+  &:before {
+    content: $ar-letter;
+  }
+}
+.ar-levels-1 {
+  &:before {
+    content: $ar-levels-1;
+  }
+}
+.ar-levels {
+  &:before {
+    content: $ar-levels;
+  }
+}
+.ar-like-1 {
+  &:before {
+    content: $ar-like-1;
+  }
+}
+.ar-like {
+  &:before {
+    content: $ar-like;
+  }
+}
+.ar-list-11 {
+  &:before {
+    content: $ar-list-11;
+  }
+}
+.ar-list-2 {
+  &:before {
+    content: $ar-list-2;
+  }
+}
+.ar-list-3 {
+  &:before {
+    content: $ar-list-3;
+  }
+}
+.ar-list-4 {
+  &:before {
+    content: $ar-list-4;
+  }
+}
+.ar-list1 {
+  &:before {
+    content: $ar-list1;
+  }
+}
+.ar-login1 {
+  &:before {
+    content: $ar-login1;
+  }
+}
+.ar-logout {
+  &:before {
+    content: $ar-logout;
+  }
+}
+.ar-megaphone1 {
+  &:before {
+    content: $ar-megaphone1;
+  }
+}
+.ar-menu-11 {
+  &:before {
+    content: $ar-menu-11;
+  }
+}
+.ar-menu-21 {
+  &:before {
+    content: $ar-menu-21;
+  }
+}
+.ar-menu1 {
+  &:before {
+    content: $ar-menu1;
+  }
+}
+.ar-microphone {
+  &:before {
+    content: $ar-microphone;
+  }
+}
+.ar-minimize-1 {
+  &:before {
+    content: $ar-minimize-1;
+  }
+}
+.ar-minimize-2 {
+  &:before {
+    content: $ar-minimize-2;
+  }
+}
+.ar-minimize-3 {
+  &:before {
+    content: $ar-minimize-3;
+  }
+}
+.ar-minimize {
+  &:before {
+    content: $ar-minimize;
+  }
+}
+.ar-more-11 {
+  &:before {
+    content: $ar-more-11;
+  }
+}
+.ar-more1 {
+  &:before {
+    content: $ar-more1;
+  }
+}
+.ar-move-1 {
+  &:before {
+    content: $ar-move-1;
+  }
+}
+.ar-move {
+  &:before {
+    content: $ar-move;
+  }
+}
+.ar-mute {
+  &:before {
+    content: $ar-mute;
+  }
+}
+.ar-networking {
+  &:before {
+    content: $ar-networking;
+  }
+}
+.ar-next-1 {
+  &:before {
+    content: $ar-next-1;
+  }
+}
+.ar-next1 {
+  &:before {
+    content: $ar-next1;
+  }
+}
+.ar-organization {
+  &:before {
+    content: $ar-organization;
+  }
+}
+.ar-orientation {
+  &:before {
+    content: $ar-orientation;
+  }
+}
+.ar-paper-plane1 {
+  &:before {
+    content: $ar-paper-plane1;
+  }
+}
+.ar-password {
+  &:before {
+    content: $ar-password;
+  }
+}
+.ar-picture1 {
+  &:before {
+    content: $ar-picture1;
+  }
+}
+.ar-pie-chart-1 {
+  &:before {
+    content: $ar-pie-chart-1;
+  }
+}
+.ar-pie-chart-2 {
+  &:before {
+    content: $ar-pie-chart-2;
+  }
+}
+.ar-pie-chart {
+  &:before {
+    content: $ar-pie-chart;
+  }
+}
+.ar-placeholder1 {
+  &:before {
+    content: $ar-placeholder1;
+  }
+}
+.ar-plus1 {
+  &:before {
+    content: $ar-plus1;
+  }
+}
+.ar-previous-1 {
+  &:before {
+    content: $ar-previous-1;
+  }
+}
+.ar-previous1 {
+  &:before {
+    content: $ar-previous1;
+  }
+}
+.ar-repeat-11 {
+  &:before {
+    content: $ar-repeat-11;
+  }
+}
+.ar-repeat-2 {
+  &:before {
+    content: $ar-repeat-2;
+  }
+}
+.ar-repeat-3 {
+  &:before {
+    content: $ar-repeat-3;
+  }
+}
+.ar-repeat-4 {
+  &:before {
+    content: $ar-repeat-4;
+  }
+}
+.ar-repeat-5 {
+  &:before {
+    content: $ar-repeat-5;
+  }
+}
+.ar-repeat-6 {
+  &:before {
+    content: $ar-repeat-6;
+  }
+}
+.ar-repeat-7 {
+  &:before {
+    content: $ar-repeat-7;
+  }
+}
+.ar-repeat-8 {
+  &:before {
+    content: $ar-repeat-8;
+  }
+}
+.ar-repeat-9 {
+  &:before {
+    content: $ar-repeat-9;
+  }
+}
+.ar-repeat1 {
+  &:before {
+    content: $ar-repeat1;
+  }
+}
+.ar-right-arrow-1 {
+  &:before {
+    content: $ar-right-arrow-1;
+  }
+}
+.ar-right-arrow {
+  &:before {
+    content: $ar-right-arrow;
+  }
+}
+.ar-save1 {
+  &:before {
+    content: $ar-save1;
+  }
+}
+.ar-search1 {
+  &:before {
+    content: $ar-search1;
+  }
+}
+.ar-shuffle1 {
+  &:before {
+    content: $ar-shuffle1;
+  }
+}
+.ar-smartphone-12 {
+  &:before {
+    content: $ar-smartphone-12;
+  }
+}
+.ar-smartphone1 {
+  &:before {
+    content: $ar-smartphone1;
+  }
+}
+.ar-sort-1 {
+  &:before {
+    content: $ar-sort-1;
+  }
+}
+.ar-sort {
+  &:before {
+    content: $ar-sort;
+  }
+}
+.ar-speaker {
+  &:before {
+    content: $ar-speaker;
+  }
+}
+.ar-speech-bubble-1 {
+  &:before {
+    content: $ar-speech-bubble-1;
+  }
+}
+.ar-speech-bubble-2 {
+  &:before {
+    content: $ar-speech-bubble-2;
+  }
+}
+.ar-speech-bubble-3 {
+  &:before {
+    content: $ar-speech-bubble-3;
+  }
+}
+.ar-speech-bubble-4 {
+  &:before {
+    content: $ar-speech-bubble-4;
+  }
+}
+.ar-speech-bubble-8 {
+  &:before {
+    content: $ar-speech-bubble-8;
+  }
+}
+.ar-speech-bubble-9 {
+  &:before {
+    content: $ar-speech-bubble-9;
+  }
+}
+.ar-speech-bubble-10 {
+  &:before {
+    content: $ar-speech-bubble-10;
+  }
+}
+.ar-speech-bubble-11 {
+  &:before {
+    content: $ar-speech-bubble-11;
+  }
+}
+.ar-speech-bubble-12 {
+  &:before {
+    content: $ar-speech-bubble-12;
+  }
+}
+.ar-speech-bubble-17 {
+  &:before {
+    content: $ar-speech-bubble-17;
+  }
+}
+.ar-speech-bubble-18 {
+  &:before {
+    content: $ar-speech-bubble-18;
+  }
+}
+.ar-speech-bubble-19 {
+  &:before {
+    content: $ar-speech-bubble-19;
+  }
+}
+.ar-speech-bubble-20 {
+  &:before {
+    content: $ar-speech-bubble-20;
+  }
+}
+.ar-speech-bubble-21 {
+  &:before {
+    content: $ar-speech-bubble-21;
+  }
+}
+.ar-speech-bubble-22 {
+  &:before {
+    content: $ar-speech-bubble-22;
+  }
+}
+.ar-speech-bubble-24 {
+  &:before {
+    content: $ar-speech-bubble-24;
+  }
+}
+.ar-speech-bubble-25 {
+  &:before {
+    content: $ar-speech-bubble-25;
+  }
+}
+.ar-speech-bubble-26 {
+  &:before {
+    content: $ar-speech-bubble-26;
+  }
+}
+.ar-speech-bubble-27 {
+  &:before {
+    content: $ar-speech-bubble-27;
+  }
+}
+.ar-speech-bubble-28 {
+  &:before {
+    content: $ar-speech-bubble-28;
+  }
+}
+.ar-speech-bubble {
+  &:before {
+    content: $ar-speech-bubble;
+  }
+}
+.ar-star1 {
+  &:before {
+    content: $ar-star1;
+  }
+}
+.ar-stick-man-1 {
+  &:before {
+    content: $ar-stick-man-1;
+  }
+}
+.ar-stick-man-2 {
+  &:before {
+    content: $ar-stick-man-2;
+  }
+}
+.ar-stick-man-3 {
+  &:before {
+    content: $ar-stick-man-3;
+  }
+}
+.ar-stick-man-4 {
+  &:before {
+    content: $ar-stick-man-4;
+  }
+}
+.ar-stick-man {
+  &:before {
+    content: $ar-stick-man;
+  }
+}
+.ar-sticker-1 {
+  &:before {
+    content: $ar-sticker-1;
+  }
+}
+.ar-sticker-2 {
+  &:before {
+    content: $ar-sticker-2;
+  }
+}
+.ar-sticker-3 {
+  &:before {
+    content: $ar-sticker-3;
+  }
+}
+.ar-sticker-4 {
+  &:before {
+    content: $ar-sticker-4;
+  }
+}
+.ar-tap {
+  &:before {
+    content: $ar-tap;
+  }
+}
+.ar-telephone-1 {
+  &:before {
+    content: $ar-telephone-1;
+  }
+}
+.ar-telephone-2 {
+  &:before {
+    content: $ar-telephone-2;
+  }
+}
+.ar-telephone-3 {
+  &:before {
+    content: $ar-telephone-3;
+  }
+}
+.ar-telephone-4 {
+  &:before {
+    content: $ar-telephone-4;
+  }
+}
+.ar-telephone-5 {
+  &:before {
+    content: $ar-telephone-5;
+  }
+}
+.ar-telephone-6 {
+  &:before {
+    content: $ar-telephone-6;
+  }
+}
+.ar-telephone-7 {
+  &:before {
+    content: $ar-telephone-7;
+  }
+}
+.ar-telephone-8 {
+  &:before {
+    content: $ar-telephone-8;
+  }
+}
+.ar-telephone {
+  &:before {
+    content: $ar-telephone;
+  }
+}
+.ar-transfer-1 {
+  &:before {
+    content: $ar-transfer-1;
+  }
+}
+.ar-transfer-2 {
+  &:before {
+    content: $ar-transfer-2;
+  }
+}
+.ar-transfer-3 {
+  &:before {
+    content: $ar-transfer-3;
+  }
+}
+.ar-transfer-4 {
+  &:before {
+    content: $ar-transfer-4;
+  }
+}
+.ar-transfer-5 {
+  &:before {
+    content: $ar-transfer-5;
+  }
+}
+.ar-transfer-6 {
+  &:before {
+    content: $ar-transfer-6;
+  }
+}
+.ar-transfer-7 {
+  &:before {
+    content: $ar-transfer-7;
+  }
+}
+.ar-transfer-8 {
+  &:before {
+    content: $ar-transfer-8;
+  }
+}
+.ar-transfer-9 {
+  &:before {
+    content: $ar-transfer-9;
+  }
+}
+.ar-transfer-10 {
+  &:before {
+    content: $ar-transfer-10;
+  }
+}
+.ar-transfer {
+  &:before {
+    content: $ar-transfer;
+  }
+}
+.ar-up-arrow {
+  &:before {
+    content: $ar-up-arrow;
+  }
+}
+.ar-upload-1 {
+  &:before {
+    content: $ar-upload-1;
+  }
+}
+.ar-upload-2 {
+  &:before {
+    content: $ar-upload-2;
+  }
+}
+.ar-upload1 {
+  &:before {
+    content: $ar-upload1;
+  }
+}
+.ar-user-11 {
+  &:before {
+    content: $ar-user-11;
+  }
+}
+.ar-user-21 {
+  &:before {
+    content: $ar-user-21;
+  }
+}
+.ar-user1 {
+  &:before {
+    content: $ar-user1;
+  }
+}
+.ar-adobe {
+  &:before {
+    content: $ar-adobe;
+  }
+}
+.ar-adobeillustrator {
+  &:before {
+    content: $ar-adobeillustrator;
+  }
+}
+.ar-adobephotoshop {
+  &:before {
+    content: $ar-adobephotoshop;
+  }
+}
+.ar-airbnb {
+  &:before {
+    content: $ar-airbnb;
+  }
+}
+.ar-amazon {
+  &:before {
+    content: $ar-amazon;
+  }
+}
+.ar-amazonaws {
+  &:before {
+    content: $ar-amazonaws;
+  }
+}
+.ar-android {
+  &:before {
+    content: $ar-android;
+  }
+}
+.ar-angular {
+  &:before {
+    content: $ar-angular;
+  }
+}
+.ar-apache {
+  &:before {
+    content: $ar-apache;
+  }
+}
+.ar-apple {
+  &:before {
+    content: $ar-apple;
+  }
+}
+.ar-archlinux {
+  &:before {
+    content: $ar-archlinux;
+  }
+}
+.ar-asana {
+  &:before {
+    content: $ar-asana;
+  }
+}
+.ar-at-and-t {
+  &:before {
+    content: $ar-at-and-t;
+  }
+}
+.ar-atlassian {
+  &:before {
+    content: $ar-atlassian;
+  }
+}
+.ar-atom {
+  &:before {
+    content: $ar-atom;
+  }
+}
+.ar-auth0 {
+  &:before {
+    content: $ar-auth0;
+  }
+}
+.ar-bit {
+  &:before {
+    content: $ar-bit;
+  }
+}
+.ar-bitbucket {
+  &:before {
+    content: $ar-bitbucket;
+  }
+}
+.ar-bitcoin {
+  &:before {
+    content: $ar-bitcoin;
+  }
+}
+.ar-blender {
+  &:before {
+    content: $ar-blender;
+  }
+}
+.ar-blogger {
+  &:before {
+    content: $ar-blogger;
+  }
+}
+.ar-bootstrap {
+  &:before {
+    content: $ar-bootstrap;
+  }
+}
+.ar-bower {
+  &:before {
+    content: $ar-bower;
+  }
+}
+.ar-buffer {
+  &:before {
+    content: $ar-buffer;
+  }
+}
+.ar-cakephp {
+  &:before {
+    content: $ar-cakephp;
+  }
+}
+.ar-circleci {
+  &:before {
+    content: $ar-circleci;
+  }
+}
+.ar-clojure {
+  &:before {
+    content: $ar-clojure;
+  }
+}
+.ar-codeigniter {
+  &:before {
+    content: $ar-codeigniter;
+  }
+}
+.ar-codepen {
+  &:before {
+    content: $ar-codepen;
+  }
+}
+.ar-coffeescript {
+  &:before {
+    content: $ar-coffeescript;
+  }
+}
+.ar-commonworkflowlanguage {
+  &:before {
+    content: $ar-commonworkflowlanguage;
+  }
+}
+.ar-cplusplus {
+  &:before {
+    content: $ar-cplusplus;
+  }
+}
+.ar-css3 {
+  &:before {
+    content: $ar-css3;
+  }
+}
+.ar-csswizardry {
+  &:before {
+    content: $ar-csswizardry;
+  }
+}
+.ar-d3-dot-js {
+  &:before {
+    content: $ar-d3-dot-js;
+  }
+}
+.ar-debian {
+  &:before {
+    content: $ar-debian;
+  }
+}
+.ar-digitalocean {
+  &:before {
+    content: $ar-digitalocean;
+  }
+}
+.ar-discord {
+  &:before {
+    content: $ar-discord;
+  }
+}
+.ar-django {
+  &:before {
+    content: $ar-django;
+  }
+}
+.ar-docker {
+  &:before {
+    content: $ar-docker;
+  }
+}
+.ar-dot-net {
+  &:before {
+    content: $ar-dot-net;
+  }
+}
+.ar-dropbox {
+  &:before {
+    content: $ar-dropbox;
+  }
+}
+.ar-drupal {
+  &:before {
+    content: $ar-drupal;
+  }
+}
+.ar-eclipseide {
+  &:before {
+    content: $ar-eclipseide;
+  }
+}
+.ar-elastic {
+  &:before {
+    content: $ar-elastic;
+  }
+}
+.ar-elasticcloud {
+  &:before {
+    content: $ar-elasticcloud;
+  }
+}
+.ar-elasticsearch {
+  &:before {
+    content: $ar-elasticsearch;
+  }
+}
+.ar-elasticstack {
+  &:before {
+    content: $ar-elasticstack;
+  }
+}
+.ar-electron {
+  &:before {
+    content: $ar-electron;
+  }
+}
+.ar-elementary {
+  &:before {
+    content: $ar-elementary;
+  }
+}
+.ar-eslint {
+  &:before {
+    content: $ar-eslint;
+  }
+}
+.ar-facebook {
+  &:before {
+    content: $ar-facebook;
+  }
+}
+.ar-firebase {
+  &:before {
+    content: $ar-firebase;
+  }
+}
+.ar-flask {
+  &:before {
+    content: $ar-flask;
+  }
+}
+.ar-flutter {
+  &:before {
+    content: $ar-flutter;
+  }
+}
+.ar-freecodecamp {
+  &:before {
+    content: $ar-freecodecamp;
+  }
+}
+.ar-git {
+  &:before {
+    content: $ar-git;
+  }
+}
+.ar-github {
+  &:before {
+    content: $ar-github;
+  }
+}
+.ar-gitlab {
+  &:before {
+    content: $ar-gitlab;
+  }
+}
+.ar-glassdoor {
+  &:before {
+    content: $ar-glassdoor;
+  }
+}
+.ar-gmail {
+  &:before {
+    content: $ar-gmail;
+  }
+}
+.ar-gnu {
+  &:before {
+    content: $ar-gnu;
+  }
+}
+.ar-go {
+  &:before {
+    content: $ar-go;
+  }
+}
+.ar-google {
+  &:before {
+    content: $ar-google;
+  }
+}
+.ar-googleanalytics {
+  &:before {
+    content: $ar-googleanalytics;
+  }
+}
+.ar-googlechrome {
+  &:before {
+    content: $ar-googlechrome;
+  }
+}
+.ar-googlekeep {
+  &:before {
+    content: $ar-googlekeep;
+  }
+}
+.ar-googleplay {
+  &:before {
+    content: $ar-googleplay;
+  }
+}
+.ar-googleplus {
+  &:before {
+    content: $ar-googleplus;
+  }
+}
+.ar-graphql {
+  &:before {
+    content: $ar-graphql;
+  }
+}
+.ar-gulp {
+  &:before {
+    content: $ar-gulp;
+  }
+}
+.ar-haskell {
+  &:before {
+    content: $ar-haskell;
+  }
+}
+.ar-heroku {
+  &:before {
+    content: $ar-heroku;
+  }
+}
+.ar-html5 {
+  &:before {
+    content: $ar-html5;
+  }
+}
+.ar-icloud {
+  &:before {
+    content: $ar-icloud;
+  }
+}
+.ar-inkscape {
+  &:before {
+    content: $ar-inkscape;
+  }
+}
+.ar-instagram {
+  &:before {
+    content: $ar-instagram;
+  }
+}
+.ar-intel {
+  &:before {
+    content: $ar-intel;
+  }
+}
+.ar-internetexplorer {
+  &:before {
+    content: $ar-internetexplorer;
+  }
+}
+.ar-ionic {
+  &:before {
+    content: $ar-ionic;
+  }
+}
+.ar-java {
+  &:before {
+    content: $ar-java;
+  }
+}
+.ar-javascript {
+  &:before {
+    content: $ar-javascript;
+  }
+}
+.ar-jenkins {
+  &:before {
+    content: $ar-jenkins;
+  }
+}
+.ar-jest {
+  &:before {
+    content: $ar-jest;
+  }
+}
+.ar-jira {
+  &:before {
+    content: $ar-jira;
+  }
+}
+.ar-jquery {
+  &:before {
+    content: $ar-jquery;
+  }
+}
+.ar-jsfiddle {
+  &:before {
+    content: $ar-jsfiddle;
+  }
+}
+.ar-json {
+  &:before {
+    content: $ar-json;
+  }
+}
+.ar-kibana {
+  &:before {
+    content: $ar-kibana;
+  }
+}
+.ar-ko-fi {
+  &:before {
+    content: $ar-ko-fi;
+  }
+}
+.ar-kotlin {
+  &:before {
+    content: $ar-kotlin;
+  }
+}
+.ar-laravel {
+  &:before {
+    content: $ar-laravel;
+  }
+}
+.ar-linkedin {
+  &:before {
+    content: $ar-linkedin;
+  }
+}
+.ar-linux {
+  &:before {
+    content: $ar-linux;
+  }
+}
+.ar-linuxfoundation {
+  &:before {
+    content: $ar-linuxfoundation;
+  }
+}
+.ar-logstash {
+  &:before {
+    content: $ar-logstash;
+  }
+}
+.ar-lua {
+  &:before {
+    content: $ar-lua;
+  }
+}
+.ar-mailchimp {
+  &:before {
+    content: $ar-mailchimp;
+  }
+}
+.ar-materialdesign {
+  &:before {
+    content: $ar-materialdesign;
+  }
+}
+.ar-medium {
+  &:before {
+    content: $ar-medium;
+  }
+}
+.ar-meetup {
+  &:before {
+    content: $ar-meetup;
+  }
+}
+.ar-messenger {
+  &:before {
+    content: $ar-messenger;
+  }
+}
+.ar-microsoft {
+  &:before {
+    content: $ar-microsoft;
+  }
+}
+.ar-microsoftedge {
+  &:before {
+    content: $ar-microsoftedge;
+  }
+}
+.ar-microsoftoutlook {
+  &:before {
+    content: $ar-microsoftoutlook;
+  }
+}
+.ar-mongodb {
+  &:before {
+    content: $ar-mongodb;
+  }
+}
+.ar-mozilla {
+  &:before {
+    content: $ar-mozilla;
+  }
+}
+.ar-mozillafirefox {
+  &:before {
+    content: $ar-mozillafirefox;
+  }
+}
+.ar-mysql {
+  &:before {
+    content: $ar-mysql;
+  }
+}
+.ar-nativescript {
+  &:before {
+    content: $ar-nativescript;
+  }
+}
+.ar-netflix {
+  &:before {
+    content: $ar-netflix;
+  }
+}
+.ar-nginx {
+  &:before {
+    content: $ar-nginx;
+  }
+}
+.ar-node-dot-js {
+  &:before {
+    content: $ar-node-dot-js;
+  }
+}
+.ar-nodemon {
+  &:before {
+    content: $ar-nodemon;
+  }
+}
+.ar-npm {
+  &:before {
+    content: $ar-npm;
+  }
+}
+.ar-nuxt-dot-js {
+  &:before {
+    content: $ar-nuxt-dot-js;
+  }
+}
+.ar-opera {
+  &:before {
+    content: $ar-opera;
+  }
+}
+.ar-php {
+  &:before {
+    content: $ar-php;
+  }
+}
+.ar-pluralsight {
+  &:before {
+    content: $ar-pluralsight;
+  }
+}
+.ar-podcasts {
+  &:before {
+    content: $ar-podcasts;
+  }
+}
+.ar-postgresql {
+  &:before {
+    content: $ar-postgresql;
+  }
+}
+.ar-postman {
+  &:before {
+    content: $ar-postman;
+  }
+}
+.ar-powershell {
+  &:before {
+    content: $ar-powershell;
+  }
+}
+.ar-python {
+  &:before {
+    content: $ar-python;
+  }
+}
+.ar-r {
+  &:before {
+    content: $ar-r;
+  }
+}
+.ar-rails {
+  &:before {
+    content: $ar-rails;
+  }
+}
+.ar-raspberrypi {
+  &:before {
+    content: $ar-raspberrypi;
+  }
+}
+.ar-react {
+  &:before {
+    content: $ar-react;
+  }
+}
+.ar-readthedocs {
+  &:before {
+    content: $ar-readthedocs;
+  }
+}
+.ar-redis {
+  &:before {
+    content: $ar-redis;
+  }
+}
+.ar-redux {
+  &:before {
+    content: $ar-redux;
+  }
+}
+.ar-rollup-dot-js {
+  &:before {
+    content: $ar-rollup-dot-js;
+  }
+}
+.ar-roots {
+  &:before {
+    content: $ar-roots;
+  }
+}
+.ar-rss {
+  &:before {
+    content: $ar-rss;
+  }
+}
+.ar-ruby {
+  &:before {
+    content: $ar-ruby;
+  }
+}
+.ar-rubygems {
+  &:before {
+    content: $ar-rubygems;
+  }
+}
+.ar-safari {
+  &:before {
+    content: $ar-safari;
+  }
+}
+.ar-salesforce {
+  &:before {
+    content: $ar-salesforce;
+  }
+}
+.ar-sap {
+  &:before {
+    content: $ar-sap;
+  }
+}
+.ar-sass {
+  &:before {
+    content: $ar-sass;
+  }
+}
+.ar-scala {
+  &:before {
+    content: $ar-scala;
+  }
+}
+.ar-sega {
+  &:before {
+    content: $ar-sega;
+  }
+}
+.ar-skype {
+  &:before {
+    content: $ar-skype;
+  }
+}
+.ar-slack {
+  &:before {
+    content: $ar-slack;
+  }
+}
+.ar-soundcloud {
+  &:before {
+    content: $ar-soundcloud;
+  }
+}
+.ar-sourcegraph {
+  &:before {
+    content: $ar-sourcegraph;
+  }
+}
+.ar-sparkfun {
+  &:before {
+    content: $ar-sparkfun;
+  }
+}
+.ar-sparkpost {
+  &:before {
+    content: $ar-sparkpost;
+  }
+}
+.ar-spotify {
+  &:before {
+    content: $ar-spotify;
+  }
+}
+.ar-sprint {
+  &:before {
+    content: $ar-sprint;
+  }
+}
+.ar-stackexchange {
+  &:before {
+    content: $ar-stackexchange;
+  }
+}
+.ar-stackoverflow {
+  &:before {
+    content: $ar-stackoverflow;
+  }
+}
+.ar-statamic {
+  &:before {
+    content: $ar-statamic;
+  }
+}
+.ar-stylus {
+  &:before {
+    content: $ar-stylus;
+  }
+}
+.ar-sublimetext {
+  &:before {
+    content: $ar-sublimetext;
+  }
+}
+.ar-superuser {
+  &:before {
+    content: $ar-superuser;
+  }
+}
+.ar-swift {
+  &:before {
+    content: $ar-swift;
+  }
+}
+.ar-symfony {
+  &:before {
+    content: $ar-symfony;
+  }
+}
+.ar-ted {
+  &:before {
+    content: $ar-ted;
+  }
+}
+.ar-telegram {
+  &:before {
+    content: $ar-telegram;
+  }
+}
+.ar-tor {
+  &:before {
+    content: $ar-tor;
+  }
+}
+.ar-travisci {
+  &:before {
+    content: $ar-travisci;
+  }
+}
+.ar-trello {
+  &:before {
+    content: $ar-trello;
+  }
+}
+.ar-twilio {
+  &:before {
+    content: $ar-twilio;
+  }
+}
+.ar-twitter {
+  &:before {
+    content: $ar-twitter;
+  }
+}
+.ar-typescript {
+  &:before {
+    content: $ar-typescript;
+  }
+}
+.ar-ubuntu {
+  &:before {
+    content: $ar-ubuntu;
+  }
+}
+.ar-udacity {
+  &:before {
+    content: $ar-udacity;
+  }
+}
+.ar-udemy {
+  &:before {
+    content: $ar-udemy;
+  }
+}
+.ar-v8 {
+  &:before {
+    content: $ar-v8;
+  }
+}
+.ar-vagrant {
+  &:before {
+    content: $ar-vagrant;
+  }
+}
+.ar-vim {
+  &:before {
+    content: $ar-vim;
+  }
+}
+.ar-visualstudiocode {
+  &:before {
+    content: $ar-visualstudiocode;
+  }
+}
+.ar-vlcmediaplayer {
+  &:before {
+    content: $ar-vlcmediaplayer;
+  }
+}
+.ar-webcomponents-dot-org {
+  &:before {
+    content: $ar-webcomponents-dot-org;
+  }
+}
+.ar-webpack {
+  &:before {
+    content: $ar-webpack;
+  }
+}
+.ar-whatsapp {
+  &:before {
+    content: $ar-whatsapp;
+  }
+}
+.ar-wikipedia {
+  &:before {
+    content: $ar-wikipedia;
+  }
+}
+.ar-windows1 {
+  &:before {
+    content: $ar-windows1;
+  }
+}
+.ar-xcode {
+  &:before {
+    content: $ar-xcode;
+  }
+}
+.ar-yammer {
+  &:before {
+    content: $ar-yammer;
+  }
+}
+.ar-yarn {
+  &:before {
+    content: $ar-yarn;
+  }
+}
+.ar-youtube {
+  &:before {
+    content: $ar-youtube;
+  }
+}
+.ar-mobile {
+  &:before {
+    content: $ar-mobile;
+  }
+}
+.ar-laptop {
+  &:before {
+    content: $ar-laptop;
+  }
+}
+.ar-desktop {
+  &:before {
+    content: $ar-desktop;
+  }
+}
+.ar-tablet {
+  &:before {
+    content: $ar-tablet;
+  }
+}
+.ar-phone {
+  &:before {
+    content: $ar-phone;
+  }
+}
+.ar-document1 {
+  &:before {
+    content: $ar-document1;
+  }
+}
+.ar-documents {
+  &:before {
+    content: $ar-documents;
+  }
+}
+.ar-search2 {
+  &:before {
+    content: $ar-search2;
+  }
+}
+.ar-clipboard {
+  &:before {
+    content: $ar-clipboard;
+  }
+}
+.ar-newspaper1 {
+  &:before {
+    content: $ar-newspaper1;
+  }
+}
+.ar-notebook1 {
+  &:before {
+    content: $ar-notebook1;
+  }
+}
+.ar-book-open {
+  &:before {
+    content: $ar-book-open;
+  }
+}
+.ar-browser {
+  &:before {
+    content: $ar-browser;
+  }
+}
+.ar-calendar1 {
+  &:before {
+    content: $ar-calendar1;
+  }
+}
+.ar-presentation {
+  &:before {
+    content: $ar-presentation;
+  }
+}
+.ar-picture2 {
+  &:before {
+    content: $ar-picture2;
+  }
+}
+.ar-pictures {
+  &:before {
+    content: $ar-pictures;
+  }
+}
+.ar-video {
+  &:before {
+    content: $ar-video;
+  }
+}
+.ar-camera {
+  &:before {
+    content: $ar-camera;
+  }
+}
+.ar-printer {
+  &:before {
+    content: $ar-printer;
+  }
+}
+.ar-toolbox {
+  &:before {
+    content: $ar-toolbox;
+  }
+}
+.ar-briefcase1 {
+  &:before {
+    content: $ar-briefcase1;
+  }
+}
+.ar-wallet {
+  &:before {
+    content: $ar-wallet;
+  }
+}
+.ar-gift1 {
+  &:before {
+    content: $ar-gift1;
+  }
+}
+.ar-bargraph {
+  &:before {
+    content: $ar-bargraph;
+  }
+}
+.ar-grid {
+  &:before {
+    content: $ar-grid;
+  }
+}
+.ar-expand1 {
+  &:before {
+    content: $ar-expand1;
+  }
+}
+.ar-focus1 {
+  &:before {
+    content: $ar-focus1;
+  }
+}
+.ar-edit2 {
+  &:before {
+    content: $ar-edit2;
+  }
+}
+.ar-adjustments {
+  &:before {
+    content: $ar-adjustments;
+  }
+}
+.ar-ribbon {
+  &:before {
+    content: $ar-ribbon;
+  }
+}
+.ar-hourglass {
+  &:before {
+    content: $ar-hourglass;
+  }
+}
+.ar-lock {
+  &:before {
+    content: $ar-lock;
+  }
+}
+.ar-megaphone2 {
+  &:before {
+    content: $ar-megaphone2;
+  }
+}
+.ar-shield {
+  &:before {
+    content: $ar-shield;
+  }
+}
+.ar-trophy {
+  &:before {
+    content: $ar-trophy;
+  }
+}
+.ar-flag1 {
+  &:before {
+    content: $ar-flag1;
+  }
+}
+.ar-map1 {
+  &:before {
+    content: $ar-map1;
+  }
+}
+.ar-puzzle {
+  &:before {
+    content: $ar-puzzle;
+  }
+}
+.ar-basket {
+  &:before {
+    content: $ar-basket;
+  }
+}
+.ar-envelope {
+  &:before {
+    content: $ar-envelope;
+  }
+}
+.ar-streetsign {
+  &:before {
+    content: $ar-streetsign;
+  }
+}
+.ar-telescope {
+  &:before {
+    content: $ar-telescope;
+  }
+}
+.ar-gears {
+  &:before {
+    content: $ar-gears;
+  }
+}
+.ar-key1 {
+  &:before {
+    content: $ar-key1;
+  }
+}
+.ar-paperclip {
+  &:before {
+    content: $ar-paperclip;
+  }
+}
+.ar-attachment1 {
+  &:before {
+    content: $ar-attachment1;
+  }
+}
+.ar-pricetags {
+  &:before {
+    content: $ar-pricetags;
+  }
+}
+.ar-lightbulb {
+  &:before {
+    content: $ar-lightbulb;
+  }
+}
+.ar-layers1 {
+  &:before {
+    content: $ar-layers1;
+  }
+}
+.ar-pencil {
+  &:before {
+    content: $ar-pencil;
+  }
+}
+.ar-tools {
+  &:before {
+    content: $ar-tools;
+  }
+}
+.ar-tools-2 {
+  &:before {
+    content: $ar-tools-2;
+  }
+}
+.ar-scissors {
+  &:before {
+    content: $ar-scissors;
+  }
+}
+.ar-paintbrush {
+  &:before {
+    content: $ar-paintbrush;
+  }
+}
+.ar-magnifying-glass {
+  &:before {
+    content: $ar-magnifying-glass;
+  }
+}
+.ar-circle-compass {
+  &:before {
+    content: $ar-circle-compass;
+  }
+}
+.ar-linegraph {
+  &:before {
+    content: $ar-linegraph;
+  }
+}
+.ar-mic {
+  &:before {
+    content: $ar-mic;
+  }
+}
+.ar-strategy {
+  &:before {
+    content: $ar-strategy;
+  }
+}
+.ar-beaker {
+  &:before {
+    content: $ar-beaker;
+  }
+}
+.ar-caution {
+  &:before {
+    content: $ar-caution;
+  }
+}
+.ar-recycle {
+  &:before {
+    content: $ar-recycle;
+  }
+}
+.ar-anchor {
+  &:before {
+    content: $ar-anchor;
+  }
+}
+.ar-profile-male {
+  &:before {
+    content: $ar-profile-male;
+  }
+}
+.ar-profile-female {
+  &:before {
+    content: $ar-profile-female;
+  }
+}
+.ar-bike {
+  &:before {
+    content: $ar-bike;
+  }
+}
+.ar-wine {
+  &:before {
+    content: $ar-wine;
+  }
+}
+.ar-hotairballoon {
+  &:before {
+    content: $ar-hotairballoon;
+  }
+}
+.ar-globe {
+  &:before {
+    content: $ar-globe;
+  }
+}
+.ar-genius {
+  &:before {
+    content: $ar-genius;
+  }
+}
+.ar-map-pin {
+  &:before {
+    content: $ar-map-pin;
+  }
+}
+.ar-dial {
+  &:before {
+    content: $ar-dial;
+  }
+}
+.ar-chat {
+  &:before {
+    content: $ar-chat;
+  }
+}
+.ar-heart {
+  &:before {
+    content: $ar-heart;
+  }
+}
+.ar-cloud1 {
+  &:before {
+    content: $ar-cloud1;
+  }
+}
+.ar-upload2 {
+  &:before {
+    content: $ar-upload2;
+  }
+}
+.ar-download2 {
+  &:before {
+    content: $ar-download2;
+  }
+}
+.ar-target1 {
+  &:before {
+    content: $ar-target1;
+  }
+}
+.ar-hazardous {
+  &:before {
+    content: $ar-hazardous;
+  }
+}
+.ar-piechart {
+  &:before {
+    content: $ar-piechart;
+  }
+}
+.ar-speedometer {
+  &:before {
+    content: $ar-speedometer;
+  }
+}
+.ar-global {
+  &:before {
+    content: $ar-global;
+  }
+}
+.ar-compass1 {
+  &:before {
+    content: $ar-compass1;
+  }
+}
+.ar-lifesaver {
+  &:before {
+    content: $ar-lifesaver;
+  }
+}
+.ar-clock1 {
+  &:before {
+    content: $ar-clock1;
+  }
+}
+.ar-aperture {
+  &:before {
+    content: $ar-aperture;
+  }
+}
+.ar-quote {
+  &:before {
+    content: $ar-quote;
+  }
+}
+.ar-scope {
+  &:before {
+    content: $ar-scope;
+  }
+}
+.ar-alarmclock {
+  &:before {
+    content: $ar-alarmclock;
+  }
+}
+.ar-refresh {
+  &:before {
+    content: $ar-refresh;
+  }
+}
+.ar-happy {
+  &:before {
+    content: $ar-happy;
+  }
+}
+.ar-sad {
+  &:before {
+    content: $ar-sad;
+  }
+}
+

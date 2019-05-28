@@ -1,0 +1,57 @@
+.Contact {
+  padding-top: 8rem;
+
+
+  .info-list {
+    margin-top: 10rem;
+    // padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: rgba( 0, 0, 0, .4);
+    .info-contact {
+      margin: 0 auto;
+      padding: 50px 10px 30px;
+      text-align: center;
+      border-radius: 3px;
+      border-right: 1px solid #565656;
+
+      &:first-of-type {
+        z-index: 2;
+      }
+
+      &:last-child {
+        border: none;
+      }
+
+      .icon {
+        position: relative;
+        width: 3.8rem;
+        height: 3.8rem;
+        margin: 0 auto;
+        background-color: rgba( 255, 255, 255, .2);
+        border-radius: 3.8rem;
+        span {
+          margin-top: 0.68rem;
+          font-size: 1.8rem;
+        }
+      }
+
+      .info-title {
+        font-weight: 300;
+        font-size: 1.2rem;
+        padding-top: 1.4rem;
+      }
+
+      .info-description {
+        font-size: 1rem;
+        color: #9b9b9c;
+        a {
+          color: var(--blue);
+          &:hover {
+            color: var(--blue);
+          }
+        }
+      }
+
+    }
+  }
+}

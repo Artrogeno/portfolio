@@ -1,0 +1,416 @@
+//  ================
+//  Functions
+//  ================
+
+@mixin loop-element($nameElement, $atributeName, $baseCalc, $typeOfElementCalc, $length) {
+  @for $i from 1 through $length {
+    .#{$nameElement}#{$i * $baseCalc } { #{$atributeName}: #{( $i * $baseCalc ) + $typeOfElementCalc }; }
+  }
+}
+
+
+//  ================
+//  BODY & HTML
+//  ================
+
+body, html {
+  background: #000;
+  color: #fff;
+  text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+}
+
+body {
+  &.no-scroll {
+    overflow: hidden;
+	  // overflow-y: scroll;
+  }
+}
+
+//  ================
+//  Layout
+//  ================
+
+// width
+@include loop-element( 'w--', 'width', 1, '%', 100 );
+
+// height
+@include loop-element( 'h--', 'height', 1, '%', 100 );
+
+// margin
+@include loop-element( 'm--', 'margin', 1, 'px', 100 );
+
+// margin-left
+@include loop-element( 'm-l-', 'margin-left', 1, 'px', 100 );
+
+// margin-right
+@include loop-element( 'm-r-', 'margin-right', 1, 'px', 100 );
+
+// margin-top
+@include loop-element( 'm-t-', 'margin-top', 1, 'px', 100 );
+
+// margin-bottom
+@include loop-element( 'm-b-', 'margin-bottom', 1, 'px', 100 );
+
+// padding
+@include loop-element( 'p--', 'padding', 1, 'px', 100 );
+
+// padding-left
+@include loop-element( 'p-l-', 'padding-left', 1, 'px', 100 );
+
+// padding-right
+@include loop-element( 'p-r-', 'padding-right', 1, 'px', 100 );
+
+// padding-top
+@include loop-element( 'p-t-', 'padding-top', 1, 'px', 100 );
+
+// padding-bottom
+@include loop-element( 'p-b-', 'padding-bottom', 1, 'px', 100 );
+
+
+//  ================
+//  RESET
+//  ================
+
+.no-padding {
+  padding: 0px;
+}
+
+.no-margin {
+  padding: 0px;
+}
+
+.form-reset {
+  display: flex;
+  width: 100%;
+}
+
+.no-line {
+  line-height: 0;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+
+//  ================
+//  SCROLL WRAP
+//  ================
+
+.sectionScroll {
+  padding-top: 10rem;
+}
+
+
+//  ================
+//  NAV
+//  ================
+
+.navbar-nav .nav-item a {
+  color: #fff !important;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom .3s ease-in;
+
+  &.nav-active {
+    border-bottom: 1px solid #fff;
+  }
+}
+
+#NavBarTop {
+  &.bg-dark{
+    transition: background-color .3s linear;
+    background-color: rgba(46, 45, 45, 0.322) !important;
+    color: #fff;
+
+    &.active {
+      background-color: transparent !important;
+
+      .navbar-brand {
+        color: #fff;
+      }
+
+      .navbar-nav .nav-item a {
+        color: #fff;
+      }
+    }
+  }
+}
+
+
+//  ================
+//  PAGE
+//  ================
+
+.page {
+  padding: 0px;
+}
+
+// ================
+// FONT_SIZE
+// ================
+.font-1dot6rem {
+  font-size: 1.6rem;
+}
+
+// ================
+// MARGIN
+// ================
+.ml-auto {
+  margin-left: auto !important;
+}
+.mr-auto {
+  margin-right: auto !important;
+}
+.mt-0 {
+  margin-top: 0rem !important;
+}
+.mr-1rem {
+  margin-right: 1rem;
+}
+.mt-3 {
+  margin-top: 3rem !important;
+}
+.mt-6 {
+  margin-top: 6rem;
+}
+.mt-8 {
+  margin-top: 8rem;
+}
+.mt-10 {
+  margin-top: 10rem;
+}
+.mt-12 {
+  margin-top: 12rem;
+}
+.mt-14 {
+  margin-top: 14rem;
+}
+.mb-3 {
+  margin-bottom: 3rem !important;
+}
+.mb-4 {
+  margin-bottom: 4rem;
+}
+.mb-6 {
+  margin-bottom: 6rem;
+}
+
+// ================
+// PADDING
+// ================
+.pl-auto {
+  padding-left: auto !important;
+}
+.pr-auto {
+  padding-right: auto !important;
+}
+.pt-0 {
+  padding-top: 0 !important;
+}
+.pt-1rem {
+  padding-top: 1rem !important;
+}
+.pt-3 {
+  padding-top: 3rem !important;
+}
+.pt-4 {
+  padding-top: 4rem !important;
+}
+.pt-6 {
+  padding-top: 6rem;
+}
+.pt-8 {
+  padding-top: 8rem;
+}
+.pt-10 {
+  padding-top: 10rem;
+}
+.pt-12 {
+  padding-top: 12rem;
+}
+.pt-14 {
+  padding-top: 14rem;
+}
+
+.pb-3 {
+  padding-bottom: 3rem !important;
+}
+.pb-4 {
+  padding-bottom: 4rem !important;
+}
+.pb-6 {
+  padding-bottom: 6rem;
+}
+
+// ================
+// TYPOGRAF
+// ================
+.title {
+  letter-spacing: -.12rem;
+  font-weight: 200;
+  // color: #ffffffcb;
+  color: #fffffff5;
+}
+.subtitle {
+  color: #ffffff81;
+  margin-bottom: .2rem;
+}
+.describe {
+  margin-top: 1rem;
+  letter-spacing: -.02rem;
+  font-size: 1rem;
+  line-height: 1.8rem;
+  color: #ffffffec;
+}
+
+// ================
+// BTN WITH ICON
+// ================
+.btn {
+  &.icon {
+    display: flex !important;
+
+    .btn-text {
+      flex: 1 1 auto !important;
+    }
+    .btn-icon {
+      flex: 1 1 auto !important;
+    }
+
+    span {
+      &:first-of-type {
+        margin-right: .2rem;
+      }
+      &:last-of-type {
+        margin-left: .2rem;
+      }
+    }
+  }
+}
+
+// =============
+// BUBBLE
+// ==============
+
+.bubble{
+  display: block;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+}
+
+// =============
+// COLOR
+// ==============
+.text-blue {
+  color: var(--blue);
+}
+.text-indigo {
+  color: var(--indigo);
+}
+.text-purple {
+  color: var(--purple);
+}
+.text-pink {
+  color: var(--pink);
+}
+.text-red {
+  color: var(--red);
+}
+.text-orange {
+  color: var(--orange);
+}
+.text-yellow {
+  color: var(--yellow);
+}
+.text-green {
+  color: var(--green);
+}
+.text-teal {
+  color: var(--teal);
+}
+.text-cyan {
+  color: var(--cyan);
+}
+.text-white {
+  color: var(--white);
+}
+.text-gray {
+  color: var(--gray);
+}
+.text-gray-dark {
+  color: var(--gray-dark);
+}
+.text-primary {
+  color: var(--primary);
+}
+.text-secondary {
+  color: var(--secondary);
+}
+.text-success {
+  color: var(--success);
+}
+.text-info {
+  color: var(--info);
+}
+.text-warning {
+  color: var(--warning);
+}
+.text-danger {
+  color: var(--danger);
+}
+.text-light {
+  color: var(--light);
+}
+.text-dark {
+  color: var(--dark);
+}
+.text-artrogeno {
+  color: var(--artrogeno);
+}
+
+
+// =============
+// IMAGE
+// ==============
+
+.section-image {
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  width: 100%;
+  &:after {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: block;
+    left: 0;
+    top: 0;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .container, .container-fluid {
+    z-index: 2;
+    position: relative;
+  }
+}
+
+// =============
+// PROGRESS
+// ==============
+.progress {
+  &.text-left {
+    .progress-bar {
+      padding-left: 1rem;
+      text-align: left;
+    }
+  }
+}
+.progress-dark {
+  background-color: rgba(#fff, .2);
+}
+.progress-size-2 {
+  height: 2rem;
+}

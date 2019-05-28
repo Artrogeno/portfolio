@@ -1,0 +1,76 @@
+.About {
+  // background: seagreen;
+  .wrap-btn-to-skills {
+    margin-top: 2rem;
+  }
+
+  .info-horizontal {
+    max-width: 500px!important;
+    text-align: left!important;
+
+    .description {
+      overflow: hidden;
+      text-align: justify;
+    }
+
+    .icon {
+      width: 40px;
+      height: 40px;
+      float: left;
+      margin: 30px 0 0 15px;
+      & > .ar-icons {
+        position: relative;
+        z-index: 10;
+        margin-left: -6px;
+        margin-top: 5px;
+        font-size: 2em;
+      }
+    }
+  }
+
+  .info {
+    margin: 0 auto;
+    padding: 70px 10px 30px;
+    border-radius: 3px;
+
+    .info-title {
+      margin: 25px 0 15px;
+      padding: 0 15px;
+      color: #fff;
+    }
+
+    p {
+      color: #9a9a9a;
+      padding: 0 15px;
+      font-size: 1.1em;
+      margin-bottom: 5px;
+      font-weight: 300;
+    }
+
+    .bubble {
+      position: absolute;
+      opacity: .6;
+      margin-top: 0px;
+      margin-left: -15px;
+    }
+
+  }
+
+  .icon-front-end {
+    .bubble {
+      background-color: var(--gray);
+    }
+    .ar-icons {
+      color: var(--info);
+    }
+  }
+
+  .icon-front-back {
+    .bubble {
+      background-color: var(--gray-dark);
+    }
+    .ar-icons {
+      color: var(--artrogeno);
+    }
+  }
+}

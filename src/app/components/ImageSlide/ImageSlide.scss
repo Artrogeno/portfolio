@@ -1,0 +1,129 @@
+$bg: #161616;
+
+:root { --factor: 0; }
+
+
+// body {
+//   background-color: $bg;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
+
+.ImageSlide {
+  width: 50vh;
+  margin: auto;
+  margin-top: 2rem;
+
+  .slide {
+    position: relative;
+    z-index: 11;
+
+    --lines: 8;
+    --slide-height: 18rem;
+    --item-height: calc(var(--slide-height) / var(--lines));
+    --delay-basis: .1s;
+    transition: all .3s linear;
+
+
+    width: var(--slide-height);
+    height: var(--slide-height);
+    border-radius: 20%;
+    background-size: var(--slide-height) var(--slide-height);
+    overflow: hidden;
+
+
+    &__item {
+      &:nth-child(odd) { --factor: -1; }
+      &:nth-child(even) { --factor: 1; }
+
+      height: var(--item-height);
+      background-repeat: no-repeat;
+      background-position: center calc(var(--i) * var(--item-height) * -1);
+      background-size: var(--slide-height) var(--slide-height);
+      transition: --factor .3s ease-in-out;
+
+    }
+
+    // .slide__item {
+    //   animation: slide
+    //   calc(2s)
+    //   ease-in-out
+    //   calc(var(--delay-basis) * var(--i) * -1)
+    //   alternate
+    //   infinite;
+    // }
+
+    &:hover > &__item {
+      --factor: .5;
+    }
+    &:hover {
+      .slide__item {
+        filter: none; /* IE6-9 */
+        -webkit-filter: grayscale(20%);
+
+        // animation: slide
+        // calc(2s)
+        // ease-in-out
+        // calc(var(--delay-basis) * var(--i) * -1)
+        // alternate
+        // infinite;
+      }
+    }
+  }
+
+  &:hover {
+    .slide {
+      .slide__item {
+        animation: slide
+        calc(2s)
+        ease-in-out
+        calc(var(--delay-basis) * var(--i) * -1)
+        alternate
+        infinite;
+      }
+    }
+  }
+
+  @keyframes slide {
+    from {
+      transform: translateX(calc(var(--factor) * var(--item-height) * 1));
+      opacity: .2;
+    }
+    to {
+      transform: translateX(calc(var(--factor) * var(--item-height) * -1));
+      opacity: .2;
+    }
+  }
+
+  // Base64 is long…
+  .slide,
+  .slide__item {
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%);
+    background-image: url('./../../../assets/images/profile3.png');
+  }
+
+  .slide_border_one {
+    position: absolute;
+    top: 20px;
+    left: 100px;
+    content: '';
+    border: 10px solid rgba(255, 255, 255, 0.37);
+    box-shadow: -2px 4px 35px 0px rgba(255, 255, 255, 0.3);
+    width: 330px;
+    height: 330px;
+    z-index: 12;
+  }
+
+  .slide_border_second {
+    position: absolute;
+    top: -30px;
+    left: 20px;
+    content: '';
+    border: 10px solid rgba(122, 204, 154, 0.308);
+    width: 330px;
+    height: 330px;
+    z-index: 10;
+  }
+}

@@ -1,0 +1,160 @@
+.Contact {
+  padding-top: 4rem;
+
+  h2.title {
+    text-align: left;
+  }
+  h4.description {
+    text-align: left;
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    margin-top: 2rem;
+    margin-bottom: 2.4rem;
+  }
+  .info {
+    max-width: 360px;
+  }
+  .info-horizontal {
+    font-weight: 300;
+    .icon {
+      float: left;
+      margin-top: 0;
+      height: 100%;
+      margin-right: 1rem;
+    }
+    .icon > span {
+      font-size: 2em;
+    }
+    .info-title {
+      margin-top: 0.2rem;
+      margin-bottom: 0.5rem;
+      font-weight: 300;
+      line-height: 1.2;
+    }
+    .description {
+      p.description {
+        font-size: .9rem;
+        margin-top: .4rem;
+        margin-bottom: 1.4rem;
+      }
+    }
+  }
+
+  // CARD
+  .card-contact {
+    background-color: rgba(#262626, .8);
+    // background-color: #262626 !important;
+
+    .card-header {
+      text-align: center;
+      border-bottom: 1px solid rgba(0, 0, 0, 0);
+      .card-title {
+        font-weight: 200;
+        letter-spacing: -.12rem;
+        margin-bottom: 0;
+      }
+    }
+    .card-body {
+      margin-top: 0;
+      padding-top: 0;
+
+      label {
+        // margin-top: .8rem;
+        margin-bottom: .5rem;
+        font-weight: 200;
+        float: left;
+        text-align: left;
+      }
+
+      .input-group {
+        .input-group-prepend {
+          .input-group-text {
+            color: var(--white);
+            text-shadow: none;
+            background-color: var(--blak);
+
+            border: 1px solid var(--gray) !important;
+            border-right: transparent !important;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+
+            padding: 0.1rem 0 0.1rem 1rem;
+            -webkit-transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+            transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+            span {
+              &.ar-icons {
+                font-size: 1rem;
+              }
+            }
+          }
+        }
+
+        .form-control {
+          padding: 10px 18px 10px 18px;
+          background-color: transparent;
+
+          border: 1px solid var(--gray) !important;
+          border-left: transparent !important;
+          border-top-right-radius: 30px;
+          border-bottom-right-radius: 30px;
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+
+
+          color: var(--light);
+          line-height: normal;
+          font-size: .8rem;
+          -webkit-transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+          transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+          -webkit-box-shadow: none;
+          box-shadow: none;
+          background-clip: padding-box;
+
+          &:focus, &:active, &:hover {
+            color: var(--white);
+            border-color: var(--gray-dark);
+          }
+        }
+      }
+
+      .form-group {
+        &:focus, &:active,
+        textarea:focus, textarea:active,
+        .form-control:focus, .form-control:active  {
+          outline: none !important;
+          border-color: transparent;
+          border-bottom: 1px solid var(--gray-dark);
+          box-shadow: none !important;
+          color: var(--white);
+        }
+        textarea.form-control {
+          color: #9c9c9c;
+          text-shadow: none;
+          max-width: 100%;
+          max-height: 80px;
+          padding: 10px 10px 0 0;
+          resize: none;
+          background-color: transparent;
+          border: none;
+          border-bottom: 1px solid var(--gray);
+          border-radius: 0;
+          line-height: 2;
+          font-size: .9rem;
+          font-weight: 200;
+        }
+      }
+
+      .btn-outline-secondary {
+        color: #9c9c9c;
+        &:hover {
+          color: var(--white);
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}

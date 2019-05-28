@@ -1,0 +1,44 @@
+.Footer {
+  height: 6rem;
+  padding: 1.2rem 0;
+  text-align: center;
+  nav {
+    display: inline-block;
+    float: left;
+    ul {
+      display: block;
+      margin-bottom: 0;
+      padding: 0;
+      line-height: 3.1;
+      list-style: none;
+      li {
+        display: inline-block;
+
+        a {
+          font-weight: 200;
+          color: inherit;
+          padding: 13px 0.5rem;
+          font-size: 0.8571em;
+          text-transform: uppercase;
+          text-decoration: none;
+          .nav-link {
+            color: var(--white);
+          }
+        }
+      }
+    }
+  }
+
+  .copyright {
+    padding-top: 1.2rem;
+    font-size: 0.8rem;
+    text-align: right;
+    font-weight: 200;
+
+    a {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--green);
+    }
+  }
+}

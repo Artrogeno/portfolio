@@ -1,0 +1,293 @@
+// Variables
+//
+// Variables should follow the `$component-state-property-size` formula for
+// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+
+// Color system
+
+// Pantone - green
+$green-madang:      #c8f7c5 !default;
+$green-emerald:     #3fc380 !default;
+$green-ocean:       #4daf7c !default;
+$green-salem:       #1e824c !default;
+$green-eucalyptus:  #26a65b !default;
+$green-darksea:     #90c695 !default;
+$green-summer:      #91b496 !default;
+
+// Pantone - blue
+$blue-vivid:        #0F66DC !default;
+$blue-vivaldi:      #3755BE !default;
+
+
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+
+$grays: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$grays: map-merge(
+  (
+    "100": $gray-100,
+    "200": $gray-200,
+    "300": $gray-300,
+    "400": $gray-400,
+    "500": $gray-500,
+    "600": $gray-600,
+    "700": $gray-700,
+    "800": $gray-800,
+    "900": $gray-900
+  ),
+  $grays
+);
+
+$blue:     #007bff !default;
+$blue-100: #e4f1fe !default;
+$blue-200: #52b3d9 !default;
+$blue-300: #19b5fe !default;
+$blue-400: #3498db !default;
+$blue-500: #2c82c9 !default;
+$blue-600: #2574a9 !default;
+$blue-700: #3a539b !default;
+$blue-800: #013243 !default;
+$blue-900: #22313f !default;
+
+
+$green:     #28a745 !default;
+$green-100: #c8f7c5 !default;
+$green-200: #87d37c !default;
+$green-300: #90c695 !default;
+$green-400: #66cc99 !default;
+$green-500: #3fc380 !default;
+$green-600: #26a65b !default;
+$green-700: #049372 !default;
+$green-800: #03a678 !default;
+$green-900: #1e824c !default;
+
+$red:     #dc3545 !default;
+$red-100: #f1a9a0 !default;
+$red-200: #e08283 !default;
+$red-300: #e26a6a !default;
+$red-400: #d24d57 !default;
+$red-500: #f62459 !default;
+$red-600: #f64747 !default;
+$red-700: #f22613 !default;
+$red-800: #cf000f !default;
+$red-900: #96281b !default;
+
+$yellow:     #ffc107 !default;
+$yellow-100: #f0f0d6 !default;
+$yellow-200: #ffffcc !default;
+$yellow-300: #ffff7e !default;
+$yellow-400: #fff68f !default;
+$yellow-500: #f5e653 !default;
+$yellow-600: #f2d984 !default;
+$yellow-700: #e9d460 !default;
+$yellow-800: #f4d03f !default;
+$yellow-900: #f7ca18 !default;
+
+$orange:     #fd7e14 !default;
+$orange-100: #fde3a7 !default;
+$orange-200: #fcd670 !default;
+$orange-300: #fcb941 !default;
+$orange-400: #f4b350 !default;
+$orange-500: #f5ab35 !default;
+$orange-600: #f9b42d !default;
+$orange-700: #f39c12 !default;
+$orange-800: #e87e04 !default;
+$orange-900: #d35400 !default;
+
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$red:     #dc3545 !default;
+$yellow:  #ffc107 !default;
+$teal:    #20c997 !default;
+$cyan:    #17a2b8 !default;
+
+$colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$colors: map-merge(
+  (
+    "blue":       $blue,
+    "blue-100":   $blue-100,
+    "blue-200":   $blue-200,
+    "blue-300":   $blue-300,
+    "blue-400":   $blue-400,
+    "blue-500":   $blue-500,
+    "blue-600":   $blue-600,
+    "blue-700":   $blue-700,
+    "blue-800":   $blue-800,
+    "blue-900":   $blue-900,
+    "green":      $green,
+    "green-100":  $green-100,
+    "green-200":  $green-200,
+    "green-300":  $green-300,
+    "green-400":  $green-400,
+    "green-500":  $green-500,
+    "green-600":  $green-600,
+    "green-700":  $green-700,
+    "green-800":  $green-800,
+    "green-900":  $green-900,
+    "red":        $red,
+    "red-100":    $red-100,
+    "red-200":    $red-200,
+    "red-300":    $red-300,
+    "red-400":    $red-400,
+    "red-500":    $red-500,
+    "red-600":    $red-600,
+    "red-700":    $red-700,
+    "red-800":    $red-800,
+    "red-900":    $red-900,
+    "yellow":     $yellow,
+    "yellow-100": $yellow-100,
+    "yellow-200": $yellow-200,
+    "yellow-300": $yellow-300,
+    "yellow-400": $yellow-400,
+    "yellow-500": $yellow-500,
+    "yellow-600": $yellow-600,
+    "yellow-700": $yellow-700,
+    "yellow-800": $yellow-800,
+    "yellow-900": $yellow-900,
+    "gray":       $gray-600,
+    "gray-dark":  $gray-800,
+    "gray-100":   $gray-100,
+    "gray-200":   $gray-200,
+    "gray-300":   $gray-300,
+    "gray-400":   $gray-400,
+    "gray-500":   $gray-500,
+    "gray-600":   $gray-600,
+    "gray-700":   $gray-700,
+    "gray-800":   $gray-800,
+    "gray-900":   $gray-900,
+    "orange":     $orange,
+    "orange-100": $orange-100,
+    "orange-200": $orange-200,
+    "orange-300": $orange-300,
+    "orange-400": $orange-400,
+    "orange-500": $orange-500,
+    "orange-600": $orange-600,
+    "orange-700": $orange-700,
+    "orange-800": $orange-800,
+    "orange-900": $orange-900,
+    "indigo":     $indigo,
+    "purple":     $purple,
+    "pink":       $pink,
+    "teal":       $teal,
+    "cyan":       $cyan,
+    "white":      $white
+  ),
+  $colors
+);
+
+$primary:       $blue-vivaldi !default;
+$secondary:     $gray-600 !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-100 !default;
+$dark:          $gray-800 !default;
+$artrogeno:     $green-eucalyptus  !default;
+
+$theme-colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$theme-colors: map-merge(
+  (
+    "primary":    $primary,
+    "secondary":  $secondary,
+    "success":    $success,
+    "info":       $info,
+    "warning":    $warning,
+    "danger":     $danger,
+    "light":      $light,
+    "dark":       $dark,
+    "artrogeno":  $artrogeno,
+    "blue":       $blue,
+    "blue-100":   $blue-100,
+    "blue-200":   $blue-200,
+    "blue-300":   $blue-300,
+    "blue-400":   $blue-400,
+    "blue-500":   $blue-500,
+    "blue-600":   $blue-600,
+    "blue-700":   $blue-700,
+    "blue-800":   $blue-800,
+    "blue-900":   $blue-900,
+    "green":      $green,
+    "green-100":  $green-100,
+    "green-200":  $green-200,
+    "green-300":  $green-300,
+    "green-400":  $green-400,
+    "green-500":  $green-500,
+    "green-600":  $green-600,
+    "green-700":  $green-700,
+    "green-800":  $green-800,
+    "green-900":  $green-900,
+    "red":        $red,
+    "red-100":    $red-100,
+    "red-200":    $red-200,
+    "red-300":    $red-300,
+    "red-400":    $red-400,
+    "red-500":    $red-500,
+    "red-600":    $red-600,
+    "red-700":    $red-700,
+    "red-800":    $red-800,
+    "red-900":    $red-900,
+    "yellow":     $yellow,
+    "yellow-100": $yellow-100,
+    "yellow-200": $yellow-200,
+    "yellow-300": $yellow-300,
+    "yellow-400": $yellow-400,
+    "yellow-500": $yellow-500,
+    "yellow-600": $yellow-600,
+    "yellow-700": $yellow-700,
+    "yellow-800": $yellow-800,
+    "yellow-900": $yellow-900,
+    "gray":       $gray-600,
+    "gray-dark":  $gray-800,
+    "gray-100":   $gray-100,
+    "gray-200":   $gray-200,
+    "gray-300":   $gray-300,
+    "gray-400":   $gray-400,
+    "gray-500":   $gray-500,
+    "gray-600":   $gray-600,
+    "gray-700":   $gray-700,
+    "gray-800":   $gray-800,
+    "gray-900":   $gray-900,
+    "orange":     $orange,
+    "orange-100": $orange-100,
+    "orange-200": $orange-200,
+    "orange-300": $orange-300,
+    "orange-400": $orange-400,
+    "orange-500": $orange-500,
+    "orange-600": $orange-600,
+    "orange-700": $orange-700,
+    "orange-800": $orange-800,
+    "orange-900": $orange-900,
+  ),
+  $theme-colors
+);
+
+// Set a specific jump point for requesting color jumps
+$theme-color-interval:      8% !default;
+
+// The yiq lightness value that determines when the lightness of color changes from "dark" to "light". Acceptable values are between 0 and 255.
+$yiq-contrasted-threshold:  150 !default;
+
+// Customize the light and dark text colors for use in our YIQ color contrast function.
+$yiq-text-dark:             $gray-900 !default;
+$yiq-text-light:            $white !default;
+
+// / Your variable overrides
+
+$body-bg: #fff;
+$body-color: #111;
+
+
